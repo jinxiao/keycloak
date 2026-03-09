@@ -40,6 +40,7 @@ import { RealmSettingsLoginTab } from "./LoginTab";
 import { PartialExportDialog } from "./PartialExport";
 import { PartialImportDialog } from "./PartialImport";
 import { PoliciesTab } from "./PoliciesTab";
+import { RealmAttributesTab } from "./RealmAttributesTab";
 import ProfilesTab from "./ProfilesTab";
 import { RealmSettingsSessionsTab } from "./SessionsTab";
 import ThemesTab from "./themes/ThemesTab";
@@ -284,6 +285,7 @@ export const RealmSettingsTabs = () => {
     useRoutableTab(toRealmSettings({ realm: realmName, tab }));
 
   const generalTab = useTab("general");
+  const attributesTab = useTab("attributes");
   const loginTab = useTab("login");
   const emailTab = useTab("email");
   const themesTab = useTab("themes");
@@ -345,6 +347,13 @@ export const RealmSettingsTabs = () => {
             {...generalTab}
           >
             <RealmSettingsGeneralTab realm={realm!} save={save} />
+          </Tab>
+          <Tab
+            title={<TabTitleText>{t("attributes")}</TabTitleText>}
+            data-testid="rs-attributes-tab"
+            {...attributesTab}
+          >
+            <RealmAttributesTab realm={realm!} save={save} />
           </Tab>
           <Tab
             title={<TabTitleText>{t("login")}</TabTitleText>}

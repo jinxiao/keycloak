@@ -244,6 +244,7 @@ export * as DefaultGroupsTab from "./realm-settings/DefaultGroupsTab";
 export { RealmSettingsEmailTab } from "./realm-settings/EmailTab";
 export { RealmSettingsGeneralTab } from "./realm-settings/GeneralTab";
 export { RealmSettingsLoginTab } from "./realm-settings/LoginTab";
+export { RealmAttributesTab } from "./realm-settings/RealmAttributesTab";
 export * as NewAttributeSettings from "./realm-settings/NewAttributeSettings";
 export * as NewClientPolicy from "./realm-settings/NewClientPolicy";
 export * as NewClientPolicyCondition from "./realm-settings/NewClientPolicyCondition";

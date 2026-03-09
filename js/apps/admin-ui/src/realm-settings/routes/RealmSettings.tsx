@@ -5,6 +5,7 @@ import type { AppRouteObject } from "../../routes";
 
 export type RealmSettingsTab =
   | "general"
+  | "attributes"
   | "login"
   | "email"
   | "themes"
